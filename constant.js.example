@@ -1,0 +1,46 @@
+var constant = {
+    config: {
+        csapi: "https://dev-helpdesk.damcorp.id/api/v1",
+        token: "token",
+        number: "082110700054",
+        whatsappApi: "http://202.158.139.93:7789/",
+        cms_uri: "http://localhost:6201",
+        cms_token: "damai-danone-123",
+        port: "6101",
+        mongodb: "mongodb://localhost:27017/danone",
+        cloudinary: { 
+            cloud_name: 'damcorp', 
+            api_key: 'api_key', 
+            api_secret: 'api_secret' 
+        },
+        geocode: {
+            url: "https://reverse.geocoder.api.here.com/6.2/reversegeocode.json",
+            credentials: {
+                app_id: "app_id",
+                app_code: "app_code"
+            }
+        },
+        apollo: {
+            url: "http://apollo.gits.id:9000/v2/",
+            v2: "http://apollo.gits.id:9000/v2/",
+            client_id: "client_id",
+            client_secret: "client_secret"
+        },
+        dummyAgentNumber:[
+            "6282138082695"
+        ],
+        elastic: {
+            node: "http://localhost:9200",
+            // auth is optional
+            auth: {
+                username: 'elastic',
+                password: '1qaz2wsx'
+            }
+        },
+        loggly: {
+            token: "",
+            domain: ""
+        }
+    }
+}
+module.exports = constant
