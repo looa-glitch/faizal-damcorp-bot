@@ -7,7 +7,9 @@ const config = require('../constant').config
 const httpContext = require('express-http-context')
 
 const { Client } = require('@elastic/elasticsearch')
-const _elastic = new Client(config.elastic)
+if(config.elastic){
+    const _elastic = new Client(config.elastic)
+}
 
 var winston  = require('winston');
 var { Loggly } = require('winston-loggly-bulk');
