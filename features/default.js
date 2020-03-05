@@ -1,0 +1,8 @@
+const { NlpManager } = require("node-nlp");
+const manager = new NlpManager();
+const httpContext = require('express-http-context')
+const uuid = require('uuid/v4')
+const tm = require('../helper/trackingManager')
+module.exports = (controller) => {
+	
+}
