@@ -7,4 +7,8 @@ module.exports = (controller) => {
 	controller.plugins.cms.before("default", "final", async(convo, bot) => {
 
 	})
+
+	controller.plugins.cms.onChange("default", "variablename", async(response, convo, bot) => {
+
+	})
 }

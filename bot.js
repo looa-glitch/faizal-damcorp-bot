@@ -35,12 +35,14 @@ if (config.mongodb) {
 // const adapter = new WebAdapter({});
 const Whatsapp = require('./adapter/whatsapp')
 const adapter = new Whatsapp({});
+const httpContext = require('express-http-context')
 
 const controller = new Botkit({
     debug: true,
     webhook_uri: '/api/messages',
 
     adapter: adapter,
+    webserver_middlewares: [ httpContext.middleware ],
 
     storage
 });
