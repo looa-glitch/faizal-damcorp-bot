@@ -12,11 +12,6 @@ class consumersController {
             users.create({
                 name: name,
                 phone: phone.toString(),
-                perusahaan: perusahaan,
-                email: email,
-                lokasi: lokasi,
-                photo: photo,
-                ticket: ticket,
                 createdAt: moment().format(),
                 updatedAt: moment().format()
             }).then(result => resolve(result))
