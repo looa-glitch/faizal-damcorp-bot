@@ -34,7 +34,7 @@ module.exports = class WhatsappAdapter extends BotAdapter {
                 }
                 trackMgr.log("message-out", options)
                 await helper.api(options).then(resp => {
-
+                    
                 })
                 .catch(err => {
                     trackMgr.logInfo(err)

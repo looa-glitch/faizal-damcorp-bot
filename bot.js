@@ -22,7 +22,7 @@ let storage = null;
 if (config.mongodb) {
     storage = mongoStorage = new MongoDbStorage({
         url : config.mongodb,
-        database: 'danone',
+        database: 'bot-faizal',
         collection: 'botstorage'
     });
     const mongoose = require('mongoose')
@@ -42,7 +42,7 @@ const controller = new Botkit({
     webhook_uri: '/api/messages',
 
     adapter: adapter,
-    webserver_middlewares: [ httpContext.middleware ],
+    // webserver_middlewares: [ httpContext.middleware ],
 
     storage
 });
@@ -74,4 +74,5 @@ controller.ready(() => {
     }
 
 });
+ 
 
